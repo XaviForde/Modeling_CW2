@@ -1,0 +1,450 @@
+\ifglsentryexists{cad}{}%
+{%
+\gls@defglossaryentry{cad}%
+{%
+name={CAD},%
+sort={CAD},%
+type={acronym},%
+first={Computer Aided Design\glsspace (CAD)},%
+firstplural={Computer Aided Designs\glsspace (CADs)},%
+text={CAD},%
+plural={CADs},%
+description={Computer Aided Design},%
+descriptionplural={Computer Aided Design\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Computer Aided Design},%
+longplural={Computer Aided Designs},%
+short={CAD},%
+shortplural={CADs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cer}{}%
+{%
+\gls@defglossaryentry{cer}%
+{%
+name={CER},%
+sort={CER},%
+type={acronym},%
+first={Cost Estimating Relationship\glsspace (CER)},%
+firstplural={Cost Estimating Relationships\glsspace (CERs)},%
+text={CER},%
+plural={CERs},%
+description={Cost Estimating Relationship},%
+descriptionplural={Cost Estimating Relationship\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cost Estimating Relationship},%
+longplural={Cost Estimating Relationships},%
+short={CER},%
+shortplural={CERs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cer}{}%
+{%
+\gls@defglossaryentry{cer}%
+{%
+name={CER},%
+sort={CER},%
+type={acronym},%
+first={Cost Estimating Relationship\glsspace (CER)},%
+firstplural={Cost Estimating Relationships\glsspace (CERs)},%
+text={CER},%
+plural={CERs},%
+description={Cost Estimating Relationship},%
+descriptionplural={Cost Estimating Relationship\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cost Estimating Relationship},%
+longplural={Cost Estimating Relationships},%
+short={CER},%
+shortplural={CERs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{doc}{}%
+{%
+\gls@defglossaryentry{doc}%
+{%
+name={DOC},%
+sort={DOC},%
+type={acronym},%
+first={Direct Operating Cost\glsspace (DOC)},%
+firstplural={Direct Operating Costs\glsspace (DOCs)},%
+text={DOC},%
+plural={DOCs},%
+description={Direct Operating Cost},%
+descriptionplural={Direct Operating Cost\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Direct Operating Cost},%
+longplural={Direct Operating Costs},%
+short={DOC},%
+shortplural={DOCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fal}{}%
+{%
+\gls@defglossaryentry{fal}%
+{%
+name={FAL},%
+sort={FAL},%
+type={acronym},%
+first={Final Assembly Line\glsspace (FAL)},%
+firstplural={Final Assembly Lines\glsspace (FALs)},%
+text={FAL},%
+plural={FALs},%
+description={Final Assembly Line},%
+descriptionplural={Final Assembly Line\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Final Assembly Line},%
+longplural={Final Assembly Lines},%
+short={FAL},%
+shortplural={FALs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{irr}{}%
+{%
+\gls@defglossaryentry{irr}%
+{%
+name={IRR},%
+sort={IRR},%
+type={acronym},%
+first={Internal Rate of Return\glsspace (IRR)},%
+firstplural={Internal Rate of Returns\glsspace (IRRs)},%
+text={IRR},%
+plural={IRRs},%
+description={Internal Rate of Return},%
+descriptionplural={Internal Rate of Return\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Internal Rate of Return},%
+longplural={Internal Rate of Returns},%
+short={IRR},%
+shortplural={IRRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{lcc}{}%
+{%
+\gls@defglossaryentry{lcc}%
+{%
+name={LCC},%
+sort={LCC},%
+type={acronym},%
+first={Life Cycle Cost\glsspace (LCC)},%
+firstplural={Life Cycle Costs\glsspace (LCCs)},%
+text={LCC},%
+plural={LCCs},%
+description={Life Cycle Cost},%
+descriptionplural={Life Cycle Cost\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Life Cycle Cost},%
+longplural={Life Cycle Costs},%
+short={LCC},%
+shortplural={LCCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MRC}{}%
+{%
+\gls@defglossaryentry{MRC}%
+{%
+name={MRC},%
+sort={MRC},%
+type={acronym},%
+first={Marginal Recurring Cost\glsspace (MRC)},%
+firstplural={Marginal Recurring Costs\glsspace (MRCs)},%
+text={MRC},%
+plural={MRCs},%
+description={Marginal Recurring Cost},%
+descriptionplural={Marginal Recurring Cost\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Marginal Recurring Cost},%
+longplural={Marginal Recurring Costs},%
+short={MRC},%
+shortplural={MRCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{npv}{}%
+{%
+\gls@defglossaryentry{npv}%
+{%
+name={NPV},%
+sort={NPV},%
+type={acronym},%
+first={Net Present Value\glsspace (NPV)},%
+firstplural={Net Present Values\glsspace (NPVs)},%
+text={NPV},%
+plural={NPVs},%
+description={Net Present Value},%
+descriptionplural={Net Present Value\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Net Present Value},%
+longplural={Net Present Values},%
+short={NPV},%
+shortplural={NPVs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nrc}{}%
+{%
+\gls@defglossaryentry{nrc}%
+{%
+name={NRC},%
+sort={NRC},%
+type={acronym},%
+first={Non-Recurring Costs\glsspace (NRC)},%
+firstplural={Non-Recurring Costss\glsspace (NRCs)},%
+text={NRC},%
+plural={NRCs},%
+description={Non-Recurring Costs},%
+descriptionplural={Non-Recurring Costs\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Non-Recurring Costs},%
+longplural={Non-Recurring Costss},%
+short={NRC},%
+shortplural={NRCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{owe}{}%
+{%
+\gls@defglossaryentry{owe}%
+{%
+name={OWE},%
+sort={OWE},%
+type={acronym},%
+first={Operational Weight Empty\glsspace (OWE)},%
+firstplural={Operational Weight Emptys\glsspace (OWEs)},%
+text={OWE},%
+plural={OWEs},%
+description={Operational Weight Empty},%
+descriptionplural={Operational Weight Empty\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Operational Weight Empty},%
+longplural={Operational Weight Emptys},%
+short={OWE},%
+shortplural={OWEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rc}{}%
+{%
+\gls@defglossaryentry{rc}%
+{%
+name={RC},%
+sort={RC},%
+type={acronym},%
+first={Recurring Costs\glsspace (RC)},%
+firstplural={Recurring Costss\glsspace (RCs)},%
+text={RC},%
+plural={RCs},%
+description={Recurring Costs},%
+descriptionplural={Recurring Costs\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Recurring Costs},%
+longplural={Recurring Costss},%
+short={RC},%
+shortplural={RCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rtde}{}%
+{%
+\gls@defglossaryentry{rtde}%
+{%
+name={RTDE},%
+sort={RTDE},%
+type={acronym},%
+first={Research Test Development and Evaluation\glsspace (RTDE)},%
+firstplural={Research Test Development and Evaluations\glsspace (RTDEs)},%
+text={RTDE},%
+plural={RTDEs},%
+description={Research Test Development and Evaluation},%
+descriptionplural={Research Test Development and Evaluation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Research Test Development and Evaluation},%
+longplural={Research Test Development and Evaluations},%
+short={RTDE},%
+shortplural={RTDEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tfu}{}%
+{%
+\gls@defglossaryentry{tfu}%
+{%
+name={TFU},%
+sort={TFU},%
+type={acronym},%
+first={Theoretical First Unit Cost\glsspace (TFU)},%
+firstplural={Theoretical First Unit Costs\glsspace (TFUs)},%
+text={TFU},%
+plural={TFUs},%
+description={Theoretical First Unit Cost},%
+descriptionplural={Theoretical First Unit Cost\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Theoretical First Unit Cost},%
+longplural={Theoretical First Unit Costs},%
+short={TFU},%
+shortplural={TFUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{usd}{}%
+{%
+\gls@defglossaryentry{usd}%
+{%
+name={USD},%
+sort={USD},%
+type={acronym},%
+first={United States Dollar\glsspace (USD)},%
+firstplural={United States Dollars\glsspace (USDs)},%
+text={USD},%
+plural={USDs},%
+description={United States Dollar},%
+descriptionplural={United States Dollar\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={United States Dollar},%
+longplural={United States Dollars},%
+short={USD},%
+shortplural={USDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

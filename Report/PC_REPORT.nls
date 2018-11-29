@@ -1,0 +1,116 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{CAD}]\begingroup Computer Aided Design\nomeqref {0}
+		\nompageref{3}
+  \item [{CEF}]\begingroup Cost Escalation Factor\nomeqref {0}
+		\nompageref{3}
+  \item [{CER}]\begingroup Cost Estimating Relationship\nomeqref {0}
+		\nompageref{3}
+  \item [{DOC}]\begingroup Direct Operating Cost\nomeqref {0}
+		\nompageref{3}
+  \item [{FAL}]\begingroup Final Assembly Line\nomeqref {0}
+		\nompageref{3}
+  \item [{IRR}]\begingroup Internal Rate of Return\nomeqref {0}
+		\nompageref{3}
+  \item [{LCC}]\begingroup Life Cycle Cost\nomeqref {0}\nompageref{3}
+  \item [{MRC}]\begingroup Marginal Recurring Cost\nomeqref {0}
+		\nompageref{3}
+  \item [{NPV}]\begingroup Net Present Value\nomeqref {0}\nompageref{3}
+  \item [{NRC}]\begingroup Non-Recurring Costs\nomeqref {0}
+		\nompageref{3}
+  \item [{OWE}]\begingroup Operational Weight Empty\nomeqref {0}
+		\nompageref{3}
+  \item [{RC}]\begingroup Recurring Costs\nomeqref {0}\nompageref{3}
+  \item [{RTDE}]\begingroup Research Test Development and Evaluation\nomeqref {0}
+		\nompageref{3}
+  \item [{TFU}]\begingroup Theoretical First Unit Cost\nomeqref {0}
+		\nompageref{3}
+  \item [{USD}]\begingroup United States Dollar\nomeqref {0}
+		\nompageref{3}
+
+ \nomgroup{N}
+
+  \item [{$C_E$}]\begingroup Engineering Cost\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_F$}]\begingroup Flight Test Costs\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_M$}]\begingroup Manufacturing Costs\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_M$}]\begingroup Material Costs\nomeqref {0}\nompageref{3}
+  \item [{$C_T$}]\begingroup Tooling Cost\nomeqref {0}\nompageref{3}
+  \item [{$C_{aed_{m}}$}]\begingroup Airframe Engineering \& Design Cost for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{aed_{rtde}}$}]\begingroup Airframe Engineering and Design Cost for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{avionics}$}]\begingroup Cost of Avionics per Aircraft\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{dst_{rtde}}$}]\begingroup Development Support and Test Costs for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{ea_{m}}$}]\begingroup Engine and Avionics Cost for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{ea_{rtde}}$}]\begingroup Engines and Avionics Cost for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{FAL_{A320}}$}]\begingroup Final Assembly Line Cost for the A320\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{FAL_{A3U10}}$}]\begingroup Final Assembly Line Cost for the A3U10\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{fta}$}]\begingroup Cost of Flight Test Aircraft\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{fto_{m}}$}]\begingroup Flight Test Operations for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{int_{m}}$}]\begingroup Aircraft Interior Cost for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{man_{m}}$}]\begingroup Manufacturing Cost for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{man_{rtde}}$}]\begingroup Manufacturing Costs for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{mat_{m}}$}]\begingroup Material Costs for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{mat_{rtde}}$}]\begingroup Material Costs for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{prog}$}]\begingroup Program Cost\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{qc_{m}}$}]\begingroup Quality Control Costs for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{qc_{rtde}}$}]\begingroup Quality Control Costs for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{tool_{m}}$}]\begingroup Tooling Costs for Manufacturing Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{tool_{rtde}}$}]\begingroup Tooling Costs for RTDE Stages\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{tsf}$}]\begingroup Test \& Simulation Facilities Cost\nomeqref {0}
+		\nompageref{3}
+  \item [{$C_{unit}$ }]\begingroup Cost per Unit (average)\nomeqref {0}
+		\nompageref{3}
+  \item [{$F_{diff}$}]\begingroup Program Difficult Factor\nomeqref {0}
+		\nompageref{3}
+  \item [{$F_{mat}$}]\begingroup Material Factor\nomeqref {0}
+		\nompageref{3}
+  \item [{$FTA$}]\begingroup Number of Flight Test Aircraft Produced\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{eng}$}]\begingroup Number of Engines per Aircraft\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{m}$}]\begingroup Number Units Built To Production Standard\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{p}$}]\begingroup Number of Propellers per Aircraft\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{R_m}$}]\begingroup Monthly Production Rate for Manufactuing stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{R_{rtde}}$}]\begingroup Monthly Production Rate for RTDE Stage\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{rtde}$}]\begingroup Number of Development Aircraft\nomeqref {0}
+		\nompageref{3}
+  \item [{$N_{Y_{A320}}$}]\begingroup Number of A320s Produced per Year at FAL Site\nomeqref {0}
+		\nompageref{3}
+  \item [{$Q$}]\begingroup Number of A3U10 Aircraft Produced\nomeqref {0}
+		\nompageref{3}
+  \item [{$V_{max}$}]\begingroup Maximum Velocity\nomeqref {0}
+		\nompageref{3}
+  \item [{${OWE_{A320}}$}]\begingroup Operating Weight Empty of the A320\nomeqref {0}
+		\nompageref{3}
+  \item [{${OWE_{A3U10}}$}]\begingroup Operating Weight Empty of the A3U10\nomeqref {0}
+		\nompageref{3}
+
+\end{thenomenclature}

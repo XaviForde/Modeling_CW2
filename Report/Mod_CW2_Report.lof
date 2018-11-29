@@ -1,0 +1,8 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces The Effect of Mesh Size on Temperature Resolution }}{2}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces The Effect of Mesh Size on Temperature Resolution }}{3}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Layout of Skin Layers and the $x$ Domain. XXX REF\relax }}{4}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Temperature Profiles as Time Increases. \relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Temperature Profiles As Algorithm Converges on $\Gamma = 1$.\relax }}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {7}{\ignorespaces Flow Chart Showing The Process Followed by The XXX BCFinder.m Script\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {8}{\ignorespaces Flow Chart Showing The Process Followed by The FEM solver StaticReactDiffSolver.m\relax }}{10}{figure.caption.13}

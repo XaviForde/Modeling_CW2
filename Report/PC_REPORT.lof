@@ -1,0 +1,13 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Splitting Domain Into Equispaced Elements\relax }}{1}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Mapping to Standard Element\relax }}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Screenshot of LaplaceElemMatrix.m Function Passing Unit Tests\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Screenshot of LinearReationElemMatrix.m Function Passing Unit Tests\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of Analytical and Finite Element Solutions of Laplace's Equation\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Using the FEM to solve Laplace's Equation with an initial Neumann Boundary\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Using the FEM to solve the Static Diffusion-Reaction Equation with Dirichlet Boundary Conditions\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces Cross Section of Material.\relax }}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces The Effect of Varying the Liquid Flow Rate on Temperature Distribution and Gradient}}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces The Effect of Varying the Liquid Temperature on Temperature Distribution and Gradient }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Cross Section of Material \relax }}{16}{figure.caption.13}
+\contentsline {figure}{\numberline {12}{\ignorespaces The Effect of Mesh Size on Temperature Resolution }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {13}{\ignorespaces The Effect of Varying the Liquid Temperature on Temperature Distribution and Gradient }}{21}{figure.caption.15}
