@@ -9,7 +9,7 @@ Ne = 100;    % Number of elements
 mesh = OneDimLinearMeshGen(xmin, xmax, Ne, order); %Create mesh
 
 %Get Material and source coefficients
-bloodflow = true; % no blood flow
+bloodflow = true; % Include blood flow
 mesh = setMatCoeffVectors(mesh, bloodflow, order);
 
 %Set time stepping properties
@@ -26,10 +26,10 @@ BC(2).type = "dirichlet";
 BC(2).value = 310.15;
 
 
-%SOL = TransReactDiffSolver(mesh, dt, Tend, theta, BC, IC, mesh.fvec, order);
+SOL = TransReactDiffSolver(mesh, dt, Tend, theta, BC, IC, order);
 %Write result to csv file to save having to re-run
 %dlmwrite('Q3Result.csv', SOL, 'delimiter', ',', 'precision', 17);
-SOL = csvread('Q3Result.csv');
+%SOL = csvread('Q3Result.csv');
 figure()
 %Plot skin boundaries
 %Epidermis Boundary

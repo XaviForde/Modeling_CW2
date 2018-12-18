@@ -13,6 +13,9 @@ function [GlobalMatrix, F] = ApplyBCs(BC, GlobalMatrix, F, ne, order)
 %GlobalMatrix - formation of local element matrices (NxN matrix)
 %F - Source Vector (size Nx1 vector)
 
+%Note - This has been re-used for Transient and so Neumann Boundary no
+%       can not be evaluated by this function
+
 %% If user inputted character arrays change these to strings
 BC(1).type = string(BC(1).type);
 BC(2).type = string(BC(2).type);
@@ -27,11 +30,6 @@ elseif BC(1).type == "dirichlet"  %solve for a dirichlet BC
     GlobalMatrix(1,:) = [1, zeros(1,ne*order)];   
     %set first element of the source vector to the xmin BC value
     F(1) = BC(1).value;
-    
-elseif  BC(1).type == "nuemann"    %solve for a nuemann BC
-    
-    %subtract the xmin BC value from the first element of the source vector 
-    F(1) = F(1) - BC(1).value;
 end
 
 %% Solve xmax Boundary Condition
@@ -44,12 +42,6 @@ elseif BC(2).type == "dirichlet"  %solve for dirichlet BC
     GlobalMatrix(end,:) = [zeros(1,ne*order), 1];
     %set last element of the source vector to the xmax BC value
     F(end) = BC(2).value;
-    
-elseif BC(2).type == "nuemann"    %solve nuemann BC
-    
-    %subtract the xmin BC value from the last element of the source vector 
-    F(end) = F(end) + BC(2).value;
-end   
 end
 
 

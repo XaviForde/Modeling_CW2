@@ -1,8 +1,13 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces The Effect of Mesh Size on Temperature Resolution }}{2}{figure.caption.3}
-\contentsline {figure}{\numberline {2}{\ignorespaces The Effect of Mesh Size on Temperature Resolution }}{3}{figure.caption.4}
-\contentsline {figure}{\numberline {3}{\ignorespaces }}{4}{figure.caption.5}
-\contentsline {figure}{\numberline {4}{\ignorespaces Layout of Skin Layers and the $x$ Domain. XXX REF\relax }}{4}{figure.caption.6}
-\contentsline {figure}{\numberline {5}{\ignorespaces Temperature Profiles as Time Increases. \relax }}{5}{figure.caption.8}
-\contentsline {figure}{\numberline {6}{\ignorespaces Temperature Profiles As Algorithm Converges on $\Gamma = 1$.\relax }}{7}{figure.caption.10}
-\contentsline {figure}{\numberline {7}{\ignorespaces Flow Chart Showing The Process Followed by The XXX BCFinder.m Script\relax }}{8}{figure.caption.11}
-\contentsline {figure}{\numberline {8}{\ignorespaces Flow Chart Showing The Process Followed by The FEM solver StaticReactDiffSolver.m\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {2}{\ignorespaces The Effect of Mesh Size on Temperature Resolution }}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of Time Stepping Schemes }}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces }}{4}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Layout of Skin Layers and the $x$ Domain \cite {cw2}.\relax }}{5}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Temperature Profiles in Space and Time. \relax }}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {7}{\ignorespaces Temperature Profiles at Various Points in Time. \relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {8}{\ignorespaces Temperature Variation With Time. \relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {9}{\ignorespaces Temperature Profiles As Algorithm Converges on $\Gamma = 1$.\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {10}{\ignorespaces Flow Chart Showing The Process Followed by The XXX BCFinder.m Script\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {11}{\ignorespaces Temperature Profiles at Various Points in Time, With and Without Blood Flow. \relax }}{13}{figure.caption.16}
+\contentsline {figure}{\numberline {12}{\ignorespaces Temperature Profiles at Various Points in Time for $\Gamma = 1$ Conditions. \relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {13}{\ignorespaces Flow Chart Showing The Process Followed by The FEM solver StaticReactDiffSolver.m\relax }}{17}{figure.caption.21}

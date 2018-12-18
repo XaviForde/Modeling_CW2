@@ -1,8 +1,12 @@
 function [DiffLEM] = DiffLEM(msh, Ngp, eID, order)
-%% Returns local diffusion element matrix
-%%%%Could take FieldVal out of the loop and multiply at end??
+%% Returns the Local Element Diffusion Matrix
+% Inputs:
+%   mesh - 1D mesh containing mesh parameters (structure)
+%   Ngp - Number of Gauss points for the Gauss scheme 
+%   eID - The elements unique index
+%   order - The order of Basis Functions (1 for Linear, 2 for Quadratic)
+
 gq = CreateGQScheme(Ngp);
-Ngp = gq.npts;
 DiffLEM = zeros(order+1); %Initialize local element matrix
 
 %% Evaluate local element matrix cells using Guassian Quadrature

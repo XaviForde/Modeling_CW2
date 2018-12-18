@@ -59,7 +59,7 @@ for i = 1:length(mesh.nvec)
     elseif mesh.nvec(i) > skin.SubCut.start && mesh.nvec(i) <= skin.SubCut.end
         mesh.DCvec(i) = skin.SubCut.D;
         mesh.RCvec(i) = skin.SubCut.lambda;
-        mesh.fvec(i) = skin.SubCut.f;
+        mesh.fvec(i) = skin.SubCut.f ;
     else
         error('Node x position is not within the skin layers given')
     end

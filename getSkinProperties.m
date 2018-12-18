@@ -41,8 +41,4 @@ if bloodflow == false
     skin.SubCut.G = 0;
     skin.dermis.G = 0;
 end
-    
-
-
-
-    
+       

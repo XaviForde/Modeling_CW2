@@ -1,43 +1,52 @@
 %% This script generates the result for Part 2 Question 2a
 clear
 clc
-%Create the mesh
-order = 2;  %Linear order
-xmin = 0;   
+
+%Set Save Rate to limit Size of solution
+SaveRate = 5; %Every fith time step is sufficient resolution
+
+
+%% Set up the problem
+%Create mesh
+order = 2;  %quadratic order
+xmin = 0;
 xmax = 0.01;
 Ne = 100;    % Number of elements
 mesh = OneDimLinearMeshGen(xmin, xmax, Ne, order); %Create mesh
 
-%Get Material and source coefficients
+%Add Material and source coefficients to mesh
 bloodflow = false; % no blood flow
-mesh = setMatCoeffVectors(mesh, bloodflow, order);
+mesh = setMatCoeffVectors(mesh, bloodflow, order); 
 
 %Set time stepping properties
 theta = 1;     %Backward Euler Time Stepping Scheme
-dt = 0.01;     %Time step
-Tend = 50;
-
+dt = 0.005;     %Time step
+Tend = 50;  %Run over 50s domain
+Tvec = 0:dt:Tend; %Vector of timesteps
 %Set Initial Condition
 IC = 310.15 * ones((mesh.ne*order + 1), 1);
 %% Create Boundary Condition Stucture
-BC(1).type = "dirichlet";   
+BC(1).type = "dirichlet";
 BC(1).value = 393.15;
 BC(2).type = "dirichlet";
 BC(2).value = 310.15;
+NBC = zeros(length(mesh.nvec), length(Tvec));  %No Neumann Condition
 
-
-%SOL = TransReactDiffSolver(mesh, dt, Tend, theta, BC, IC, mesh.fvec, order);
-%Write result to csv file to save having to re-run
+%SOL = TransReactDiffSolver(mesh, dt, Tend, theta, BC, NBC, IC, order, SaveRate);
+%Write result to csv file to save having to re-run:
 %dlmwrite('Q1aResult.csv', SOL, 'delimiter', ',', 'precision', 17);
+%Read in previous result so don't have to run whilst formatting
 SOL = csvread('Q1aResult.csv');
+
+%% Plot Temperature Profiles
 figure()
-%Plot skin boundaries
-%Epidermis Boundary
+%Plot skin boundary and regions
+%Epidermis Boundary and text
 plot([15/9000 15/9000], [310 410], '--k', 'HandleVisibility', 'off')
 hold on
 text(0.0002, 405, 'Epidermis', 'interpreter', 'latex', 'FontSize', 10)
-%Dermis Boundary
-plot([.005 .005], [310 410], '--k', 'HandleVisibility', 'off')  
+%Dermis Boundary and text
+plot([.005 .005], [310 410], '--k', 'HandleVisibility', 'off')
 hold on
 text(.003, 405, 'Dermis', 'interpreter', 'latex', 'FontSize', 10)
 %Sub-cutaneous Region Text
@@ -64,35 +73,42 @@ grid on
 %% Saving The Figure
 %print -depsc \Users\xav_m\OneDrive\Documents\XAVI\University\Final_Year\Systems_Mod\Modeling_CW2\Report\Figures\epsQ21TempXT
 
+%% Plotting variation of T at single depth point with time
+figure()
+plot(0:.005*SaveRate:Tend, SOL(41,:))
+hold on
+plot(0:.005*SaveRate:Tend, SOL(101,:))
+%% Format the figure
+title('Temperature Variation With Time', 'interpreter', 'latex')
+legend({'x = 0.002m', 'x = 0.005m'}, 'interpreter', 'latex', 'location', 'best')
+xlabel('Time  in  seconds','interpreter','latex', 'FontSize', 12);
+ylabel('Temperature in Kelvin', 'interpreter','latex', 'FontSize', 12);
+ylim([310 410]);
+grid on
+%print -depsc \Users\xav_m\OneDrive\Documents\XAVI\University\Final_Year\Systems_Mod\Modeling_CW2\Report\Figures\epsTimePlot
 
-%% Calculate Gamma
-%locate epidermis boundary
-i = 1;  %start ID counter
-while mesh.DCvec(i) == mesh.DCvec(i+1)
-    i = i+1;
-end
-EpiBndID = i; %Epidermis Boundary index
-
-%locate timestep where burn temperatue is reached
-Tburn = 317.15;
-i = 1;
-
-while SOL(EpiBndID,i) < Tburn
-    i = i+1;
-end
-
-BurnStID = i;
-
-%Get Vector of temperatures after burning temp is reached
-BurnVec = SOL(EpiBndID, BurnStID:end);
-
-%Calculate gamma for each temperature in the burn vector
-
-for i = 1:length(BurnVec)
-    dGammadt(i) = 2*10^98 *exp(-12017/(BurnVec(i)-273.15));
-end
-
-gamma = trapz(dGammadt) * dt - Tburn*dt*(length(BurnVec)-1);
-
+%% Create surf plot
+figure()
+TimeVec = 0:dt*SaveRate:Tend;
+%Space out time plots to improve clarity of figure
+Tidx = [1:4:41 , 47:6:101, 113:12:221 ,261:40:length(TimeVec)];
+%Get X, Y and Z 
+Xsurf = mesh.nvec(1:5:end);
+Ysurf = TimeVec(Tidx);
+Zsurf = SOL(1:5:end, Tidx)';
+%Plot
+surf(Xsurf , Ysurf,  Zsurf)
+colormap jet
+%% Format the figure
+title('Temperature Variation Through the Skin Over Time', 'interpreter', 'latex')
+xlabel('$x$ \ in \ meters','interpreter','latex', 'FontSize', 12);
+ylabel('Time  in  seconds','interpreter','latex', 'FontSize', 12);
+zlabel('Temperature in Kelvin', 'interpreter','latex', 'FontSize', 12);
+%Set Limits
+zlim([310 390])
+ylim([0 50])
+xlim([0,0.01])
+% grid on
+%print -depsc \Users\xav_m\OneDrive\Documents\XAVI\University\Final_Year\Systems_Mod\Modeling_CW2\Report\Figures\epsSurf1
 
 

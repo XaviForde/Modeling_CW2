@@ -1,9 +1,9 @@
-function [F] = SourceVectorGen(mesh, f_constant, f_linear, Ngp, order)
+function [F] = SourceVectorGen(mesh, Ngp, order)
 %Generates source vector
-%Inputs:
-%mesh - Mesh contains local elements and other data in it's structure
-%f_constant - Constant source term
-%f_linear - Linear source term multiplier
+% Inputs:
+%   mesh -  1D mesh containing mesh parameters (structure)
+%   Ngp - Number of Gauss points for the Gauss scheme
+%   order - The order of Basis Functions (1 for Linear, 2 for Quadratic)
 
 ne = mesh.ne;   %Number of elements
 
@@ -13,18 +13,12 @@ F = zeros(order*ne+1,1);     %Initialise Source Vector
 %% Add in the Constant and Linear Element Vectors and Add to F
 for eID = 1:ne
     
-    %Caluculate Constant Source Local Element Vectors
-    LocalConstantSource = ConstantSourceElemVector(mesh, eID, f_constant, Ngp, order);
-    %Caluculate Linear Source Local Element Vectors
-    LocalLinearSource = LinearSourceElemVector(mesh, eID, f_linear, Ngp, order);
-    
-    %Add Linear and Constant Vectors to get Local Source Vector
-    LocalSourceVector =  LocalConstantSource; % + LocalLinearSource
+    %Caluculate Source Local Element Vectors
+    LocalSourceVector = SourceLEVec(mesh, eID, Ngp, order);
     
     %Find start and end index for the element
     StIdx = eID + (eID-1)*(order-1);
     EndIdx = StIdx + order;
-    
     
     %Add Local Source Vector into Global Source Vector at correct location
     F(StIdx:EndIdx) = F(StIdx:EndIdx) + LocalSourceVector;

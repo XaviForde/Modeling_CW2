@@ -1,5 +1,7 @@
 function [Gamma, EpiBndVec] = EvalGamma(T_x0, bloodflow)
 
+%Set Save Rate to limit Size of solution
+SaveRate = 5; %Every time step is for good time resolution
 
 %Create the mesh
 order = 1;  %Linear order
@@ -13,9 +15,10 @@ mesh = OneDimLinearMeshGen(xmin, xmax, Ne, order); %Create mesh
 mesh = setMatCoeffVectors(mesh, bloodflow, order);
 
 %Set time stepping properties
-theta = 1;     %Backward Euler Time Stepping Scheme
+theta = 0.5;     %Backward Euler Time Stepping Scheme
 dt = 0.01;     %Time step
 Tend = 50;
+Tvec = 0:dt:Tend; %Vector of timesteps
 
 %Set Initial Condition
 IC = 310.15 * ones((mesh.ne*order + 1), 1);
@@ -24,9 +27,9 @@ BC(1).type = "dirichlet";
 BC(1).value = T_x0;
 BC(2).type = "dirichlet";
 BC(2).value = 310.15;
+NBC = zeros(length(mesh.nvec), length(Tvec));  %No Neumann Condition
 
-
-SOL = TransReactDiffSolver(mesh, dt, Tend, theta, BC, IC, mesh.fvec, order);
+SOL = TransReactDiffSolver(mesh, dt, Tend, theta, BC, NBC, IC, order, SaveRate);
 
 %locate epidermis boundary
 i = 1;  %start ID counter
@@ -56,22 +59,17 @@ BurnStID = i;
 BurnVec = SOL(EpiBndID, BurnStID:end);
 
 %Calculate gamma for each temperature in the burn vector
-% GammaBurnVec = zeros(1, length(BurnVec)); %Initialise
+GammaBurnVec = zeros(1, length(BurnVec)); %Initialise
 for i = 1:length(BurnVec)
     GammaBurnVec(i) = 2*10^98 *exp(-12017/(BurnVec(i)-273.15));
 end
 
-%Calculate gamma at tburn
-%GammaTburn = zeros(1, length(BurnVec)); %Initialise
-for i = 1:length(BurnVec)
-    GammaTburn(i) = 2*10^98 *exp(-12017/(Tburn-273.15));
-end
-
 %Perform Integral including limits
-Gamma = (trapz(GammaBurnVec) * dt) - (trapz(GammaTburn) * dt);
+Gamma = (trapz(GammaBurnVec) * dt);
 
 %Set gamma to zero if Tburn was never exceeded
 if NoBurn == true
     Gamma = 0;
 end
     
+
